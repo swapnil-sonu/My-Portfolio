@@ -1,0 +1,291 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FBF5E5; /* Light beige background */
+    color: #212121; /* Dark grey text */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: #A35C7A; /* Dark pink background */
+    color: #FBF5E5; /* Light beige text */
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FBF5E5; /* Light beige text */
+    font-weight: 600;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #C890A7; /* Light pink text on hover */
+    background-color: rgba(200, 144, 167, 0.4); /* Light pink highlight effect */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #C890A7; /* Light pink background */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-in forwards;
+    position: relative; /* Add position relative */
+    z-index: 1; /* Ensure it is above other content */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #212121; /* Dark grey text */
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #A35C7A; /* Dark pink text */
+}
+
+/* Featured Projects Section */
+section {
+    padding: 2rem;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #212121; /* Dark grey text */
+}
+
+section p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #A35C7A; /* Dark pink text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #A35C7A; /* Dark pink background */
+    color: #FBF5E5; /* Light beige text */
+    padding: 1rem 0;
+}
+
+/* Button Styling */
+button {
+    background-color: #C890A7; /* Light pink background */
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    color: #212121; /* Dark grey text */
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #A35C7A; /* Dark pink on hover */
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Back-to-top button styling */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #C890A7; /* Light pink background */
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 50%;
+    color: #212121; /* Dark grey text */
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #A35C7A; /* Dark pink on hover */
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Project Cards (if added) */
+/* Project Section Styles */
+.projects {
+    padding: 2rem;
+    background: #FBF5E5; /* Light beige background */
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h4 {
+    font-size: 1.5rem;
+    color: #212121; /* Dark grey text */
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    color: #7f8c8d; /* Grey text */
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    display: inline-block;
+    color: #A35C7A; /* Dark pink text */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #C890A7; /* Light pink on hover */
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    background: #C890A7; /* Light pink background */
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #212121; /* Dark grey text */
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #212121; /* Dark grey text */
+    margin-bottom: 2rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact label {
+    font-size: 1rem;
+    color: #212121; /* Dark grey text */
+    text-align: left;
+}
+
+#contact input,
+#contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button {
+    background-color: #A35C7A; /* Dark pink background */
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    color: #FBF5E5; /* Light beige text */
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #C890A7; /* Light pink on hover */
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Skills Section */
+#skills {
+    padding: 2rem;
+    background: #FBF5E5; /* Light beige background */
+    text-align: center;
+}
+
+#skills h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #212121; /* Dark grey text */
+}
+
+#skills p {
+    font-size: 1rem;
+    color: #A35C7A; /* Dark pink text */
+    margin-bottom: 2rem;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    font-size: 1.1rem;
+    color: #212121; /* Dark grey text */
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+}

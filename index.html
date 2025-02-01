@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Hi, I'm Swapnil Sashi Behera</h2>
+        <p>I am a passionate web developer and tech enthusiast. I love creating beautiful and functional web
+            applications.</p>
+    </section>
+
+    <section id="skills">
+        <h3>My Skills</h3>
+        <p>Here are some of the skills I have acquired over the years:</p>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h3>Featured Projects</h3>
+        <p>Here are some of my recent works:</p>
+        <section class="projects">
+            <div class="project-container">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <h4>Project 1: Portfolio Website</h4>
+                    <p>A clean and responsive personal portfolio to showcase projects and skills.</p>
+                    <a href="https://github.com/your-username/My-Portfolio" target="_blank">View on GitHub</a>
+                </div>
+        
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <h4>Project 2: Weather App</h4>
+                    <p>A web application that displays real-time weather updates using an external API.</p>
+                    <a href="https://github.com/your-username/Weather-App" target="_blank">View on GitHub</a>
+                </div>
+        
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <h4>Project 3: Task Tracker</h4>
+                    <p>A simple task tracker to manage daily to-do lists with local storage support.</p>
+                    <a href="https://github.com/your-username/Task-Tracker" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <p>If you have any questions or would like to work together, feel free to reach out!</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Swapnil Sashi Behera. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
